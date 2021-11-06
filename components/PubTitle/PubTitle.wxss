@@ -1,0 +1,7 @@
+.pubTile{display: flex; justify-content: space-between; height: 60rpx;
+  align-items: center; margin-bottom: 40rpx;}
+.pubTile .txt{ font-size: 40rpx; height: 100%; position: relative; padding-left: 
+20rpx;}
+.pubTile .txt::after{ display: block; width: 8rpx; height: 34rpx;
+ background-color: #c8020b; content: "";position: absolute; left: 0; top: 50%; margin-top: -15rpx;}
+.pubTile .more{ font-size: 34rpx; color: #666;}

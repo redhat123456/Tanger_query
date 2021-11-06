@@ -1,0 +1,62 @@
+<view class="user_content">
+<view class="user_main">
+
+  <view class="app_info_item">我的快递</view>
+
+  <view class="account">
+  <view class="title">快递单号：</view>
+  <view class="num">
+    <!-- bindinput 输入的时间 -->
+    <input bindinput="Input_x1" value="{{x1}}" placeholder="例如：773113129995637" placeholder-style="color:#999;"/>
+  </view>
+</view>
+<view class="hr"></view>
+    
+
+<view class="account">
+  <view class="title">收件人号码：</view>
+  <view class="num">
+    <!-- bindinput 输入的时间 -->
+    <input bindinput="Input_x2" value="{{x2}}" placeholder="例如：15878017512" placeholder-style="color:#999;"/>
+  </view>
+</view>
+<view class="hr"></view>
+<view class="zhenwen">⚠收件人号码顺丰快递需要填，其他快递跳过</view>
+
+<button class="btn" type="primary" bindtap="inquire">查询快递</button>
+<!--第二部分-->
+<view wx:if="{{statu==1}}"> 
+<view title="tip">查询结果很快出来...</view>
+<view title="tip">请耐心等待...</view>
+<view title="tip">>>></view>
+</view>
+<view wx:if="{{statu==2}}">
+<view class="app_info_item">结果：</view>
+<view class="app_info_item">快递公司: {{typename}}</view>
+<view class="app_info_item">物流状态: <text wx:if="{{deliverystatus==1}}">在途中</text>
+<text wx:if="{{deliverystatus==2}}">派件中</text>
+<text wx:if="{{deliverystatus==3}}">已签收</text>
+<text wx:if="{{deliverystatus==4}}">派送失败(拒签等)</text>
+</view>
+<view class="app_info_item">物流信息：
+<view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{list}}"
+        wx:key="">
+            <!-- 左侧 计划容器 -->
+            <view class="goods_img_wrap">
+              <view>{{item.time}}</view>
+            </view>
+            <!-- 右侧 完成量容器 -->
+            <view class="goods_info_wrap">
+              
+              <view class="goods_price">{{item.status}} </view>
+            </view>
+          </view>
+    </view> 
+  </view>
+</view>
+  </view>
+  </view>
+
+  

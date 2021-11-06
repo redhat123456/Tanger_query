@@ -1,0 +1,2 @@
+<button type="primary" plain open-type="getUserProfile" bindgetuserinfo="handleGetUserInfo" catchtap="GetUserInfo">登录
+</button>

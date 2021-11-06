@@ -1,0 +1,29 @@
+/* pages/we/we.wxss */
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  padding-bottom: 100rpx;
+}
+
+.orders_wrap{
+  background-color: #fff;
+  margin-top: 40rpx;
+  }
+  .orders_title{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  }
+  .page{
+    background-color: #edece8;
+  }
+  .tu{
+    width: 100%;
+  }
+  .zhengwen{
+    text-align: center;
+    font-size: 50rpx;
+
+  }

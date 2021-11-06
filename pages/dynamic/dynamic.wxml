@@ -1,0 +1,18 @@
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user_info">
+     <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+     <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+    </view>  
+     <view wx:else class="user_btn">
+      <navigator url="/pages/login3/login3">登录</navigator>
+  </view>
+</view>
+
+<view class="orders_title">个人中心</view>
+
+<navigator url="/pages/we/we" >
+  <view class="app_info_item">关于我们</view></navigator>
+  

@@ -1,0 +1,117 @@
+/* pages/dynamic/dynamic.wxss */
+page{
+  background-color: #ccc;
+}
+
+
+.user_info_wrap{
+  height: 45vh;
+  overflow: hidden;
+
+}
+
+.user_img_wrap{
+  position: relative;
+}
+
+.user_bg{
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.user_info{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: 20%;
+text-align: center;
+}
+ .user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: relative;
+}
+
+ .user_name{
+  color: #fff;
+  margin-top: 40rpx;
+}
+
+ .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+.user_content{
+  position: relative;
+}
+
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  padding-bottom: 100rpx;
+}
+
+
+
+
+.orders_wrap{
+background-color: #fff;
+margin-top: 40rpx;
+}
+.orders_title{
+padding: 20rpx;
+border-bottom: 1rpx solid #ccc;
+}
+.order_content{
+  display: flex;
+
+
+}
+.order_content navigator{
+  padding: 15rpx 0;
+flex :1 ;
+text-align: center;
+}
+.iconfont{
+color: #E55952;
+}
+
+
+.address_wrap{
+   margin-top: 30rpx;
+   background-color: #fff;
+   padding: 20rpx ;
+}
+
+.app_info_wrap{
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.app_info_item{
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #ccc;
+}
+.app_info_contact{
+display: flex;
+justify-content: space-between;
+}
+.recommend_wrap{
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+

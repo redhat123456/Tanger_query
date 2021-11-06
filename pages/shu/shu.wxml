@@ -1,0 +1,89 @@
+<view class="user_content">
+<view class="user_main">
+
+  <view class="app_info_item">ISBN书号查询</view>
+
+  <view class="account">
+  <view class="title">ISBN书号：</view>
+  <view class="num">
+    <!-- bindinput 输入的时间 -->
+    <input bindinput="Input_x1" value="{{x1}}" placeholder="例如：773113129995637" placeholder-style="color:#999;"/>
+  </view>
+</view>
+<view class="hr"></view>
+    
+
+
+<button class="btn" type="primary" bindtap="inquire">查询书本</button>
+<!--第二部分-->
+<view wx:if="{{statu==1}}"> 
+<view title="tip">查询结果很快出来...</view>
+<view title="tip">请耐心等待...</view>
+<view title="tip">>>></view>
+</view>
+<view wx:if="{{statu==2}}">
+  <view wx:if="{{statu1==1}}">
+<view class="app_info_item">结果：</view>
+<view class="book-info">
+      <image class="book-image" mode="scaleToFill" src="{{pic}}"></image>
+      <view class="book-desc">
+        <text class="book-main-text">书名：{{title}}</text>
+        <text class="book-main-text">副书名：{{subtitle}}</text>
+        <text class="book-text">作者：{{author}}</text>
+        <text class="book-text">出版社：{{publisher}}</text>
+        <text class="book-text">出版地：{{pubplace}}</text>
+        <text class="book-text">出版时间：{{pubdate}}</text>
+      </view>
+    </view>
+    <view class="app_info_item">摘要：</view>
+    <text class="book-main-text">{{summary}}</text>
+    <view class="app_info_item">关键字：</view>
+    <text class="book-main-text">{{keyword}}</text>
+    <view class="app_info_item">页数：</view>
+    <text class="book-main-text">{{page}}</text>
+    <view class="app_info_item">价格：</view>
+    <text class="book-main-text">{{price}}￥</text>
+    <view class="app_info_item">装帧方式：</view>
+    <text class="book-main-text">{{binding}}</text>
+    <view class="app_info_item">ISBN：</view>
+    <text class="book-main-text">{{isbn1}}</text>
+    <view class="app_info_item">ISBN 10位：</view>
+    <text class="book-main-text">{{isbn10}}</text>
+    <view class="app_info_item">版次：</view>
+    <text class="book-main-text">{{edition}}</text>
+    <view class="app_info_item">印次：</view>
+    <text class="book-main-text">{{impression}}</text>
+    <view class="app_info_item">正文语种：</view>
+    <text class="book-main-text">{{language}}</text>
+    <view class="app_info_item">开本：</view>
+    <text class="book-main-text">{{format}}</text>
+    <view class="app_info_item">中图法分类：</view>
+    <text class="book-main-text">{{class}}</text>
+<view class="app_info_item">各大电商平台价格：
+<view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{sellerlist}}"
+        wx:key="">
+            <!-- 左侧 计划容器 -->
+            <view class="goods_img_wrap">
+              <view>{{item.seller}}</view>
+            </view>
+            <!-- 右侧 完成量容器 -->
+            <view class="goods_info_wrap">
+              
+              <view class="goods_price">价格：{{item.price}} </view>
+              <text class="goods_price">链接：{{item.link}}</text>
+            </view>
+          </view>
+    </view> 
+  </view>
+</view>
+ <view wx:if="{{statu1==2}}">
+  <view class="app_info_item">结果：</view>text
+  <view class="zhenwen">{{msg}}</view>
+ </view>
+</view>
+  </view>
+  </view>
+
+  

@@ -1,0 +1,30 @@
+<!-- 热门推荐、动画区Item -->
+<template name="jiefItem1">
+    <!-- List Item begin -->
+    <view class="content-list">
+    <navigator class="item" url="/pages/vedio/vedio?id={{videoId}}">
+        <view class="top">
+        <view class="cover-img"
+        style="opacity: 1; background-image: url({{cover}});">
+        </view>
+        </view>
+        <view class="info">
+        <view class="title">{{name}}</view>
+        <view class="meta clearfix">
+            <view class="cell left">
+                <view class="bilibili-index-sprite bilibili-index-play">
+                  <image src="/images/play.png"></image>
+                </view>
+                <text wx:if="{{count==null}}">{{0}}</text>
+                <text wx:else>{{count}}</text>
+            </view>
+          
+        </view>
+        </view>
+    </navigator>
+    </view>
+    <!-- List Item end -->
+</template>
+
+
+

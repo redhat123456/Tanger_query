@@ -1,0 +1,18 @@
+<view class="user_main">
+<!--项目简介-->
+<view class="orders_wrap" >
+  <view class="orders_title">项目简介</view>
+  <view>该开发项目为了解决大家在生活中遇到的各种查询问题，希望能够满足各位大佬的查询要求，有什么好的意见或者是建议的话可以联系我😘 ~ </view>
+</view>
+<view class="orders_title">开发人员简介</view>
+  <view>项目主要开发人员：</view>
+  <view class="zhengwen">谭前程</view>
+  <image class="tu" mode="aspectFit" src="/images/i.png"></image>
+
+  <view class="orders_title">开发者寄语</view>
+  <view>希望各位同学都能够好好通过这款小程序得到东西，无论是小程序的样式也好或者是这款小程序带给你身体上的变化，我都十分感谢你使用我的作品，你的使用就是对我莫大的支持，谢谢！！！</view>
+  <view class="orders_title">联系我</view>
+  <view>谭前程邮箱：1907065810@qq.com</view>
+</view>
+
+

@@ -1,0 +1,189 @@
+/* pages/kuaidi/kuaidi.wxss */
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 100rpx;
+}
+
+
+/*列表部分*/
+.view_3 {
+  width: 100%;
+  height: 50%;
+  /* background: #f0eeed; */
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  position: relative; /*父元素位置要设置为相对*/
+  background: white;
+}
+
+.item-image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+
+.item-text {
+  color: gray;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+
+.image-jiantou {
+  width: 20rpx;
+  height: 35rpx;
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  right: 0; /* 靠右调节 */
+  margin-right: 35rpx;
+}
+
+/* 黑线 使得产生阴影效果 */
+
+.line {
+  display: flex;
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}
+
+.app_info_item{
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #ccc;
+}
+
+/* pages/tice/tice.wxss */
+.content{
+  margin-top: 80rpx;
+}
+
+.account{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 20rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+}
+
+.title{
+  font-weight: bold;
+  margin-right: 40rpx;
+}
+
+.hr{
+  width: 100%;
+  opacity: 0.5;
+  border: 2rpx solid #cccccc;
+  margin: 0 auto;
+}
+.btn{
+  margin-top: 40rpx;
+}
+
+.item{
+  display: flex;
+    flex-direction: row;
+justify-content: center;
+width: 50%;
+ 
+}
+.items{
+  display: flex;
+  width: 50%;
+  
+
+
+}
+.title1{
+  font-size: 25px;
+}
+.num1{
+  font-size: 22px;
+}
+.items2{
+  justify-content: center;
+  display:flexbox ;
+  flex-direction: row;
+}
+.item2{
+  
+  display: flex;
+}
+
+.zhengwen{
+  text-align: center;
+  font-size: 34rpx;
+
+}
+
+.first_tab .goods_item .goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_tab .goods_item .goods_img_wrap image {
+  width: 70%;
+}
+.first_tab .goods_item .goods_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.first_tab .goods_item .goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.first_tab .goods_item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.book-info {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.book-image {
+  
+  box-shadow: 0 0 10rpx #cdcdcd;
+}
+
+.book-desc {
+  /*border: 1px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30rpx;
+}
+
+.book-main-text {
+  color: #1e1e1e;
+  font-size: 35rpx;
+}
+
+.book-text {
+  color: #8a8a8a;
+  font-size: 30rpx;
+}

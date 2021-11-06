@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/shu/shu",
+          "pathName": "pages/shu/shu",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

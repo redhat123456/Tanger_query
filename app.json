@@ -1,0 +1,40 @@
+{
+  "usingComponents": {"toubu": "/components/toubu/toubu"},
+  "pages":[
+    "pages/index/index",
+    "pages/dynamic/dynamic",
+    "pages/login3/login3",
+    "pages/we/we",
+    "pages/city/city",
+    "pages/kuaidi/kuaidi",
+    "pages/shu/shu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "查询中心",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#43B0D1"
+  },
+  "tabBar": {
+    "selectedColor": "#43B0D1",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home2.png"
+      },
+
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "个人",
+        "iconPath": "images/human.png",
+        "selectedIconPath": "images/human2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

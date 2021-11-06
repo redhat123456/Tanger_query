@@ -1,0 +1,405 @@
+.user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 100rpx;
+}
+
+
+/*列表部分*/
+.view_3 {
+  width: 100%;
+  height: 50%;
+  /* background: #f0eeed; */
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  position: relative; /*父元素位置要设置为相对*/
+  background: white;
+}
+
+.item-image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+
+.item-text {
+  color: gray;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+
+.image-jiantou {
+  width: 20rpx;
+  height: 35rpx;
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  right: 0; /* 靠右调节 */
+  margin-right: 35rpx;
+}
+
+/* 黑线 使得产生阴影效果 */
+
+.line {
+  display: flex;
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}
+
+.app_info_item{
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #ccc;
+}
+
+/* pages/tice/tice.wxss */
+.content{
+  margin-top: 80rpx;
+}
+
+.account{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 20rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+}
+
+.title{
+  font-weight: bold;
+  margin-right: 40rpx;
+}
+
+.hr{
+  width: 100%;
+  opacity: 0.5;
+  border: 2rpx solid #cccccc;
+  margin: 0 auto;
+}
+.btn{
+  margin-top: 40rpx;
+}
+
+.item{
+  display: flex;
+    flex-direction: row;
+justify-content: center;
+width: 50%;
+ 
+}
+.items{
+  display: flex;
+  width: 50%;
+  
+
+
+}
+.title1{
+  font-size: 25px;
+}
+.num1{
+  font-size: 22px;
+}
+.items2{
+  justify-content: center;
+  display:flexbox ;
+  flex-direction: row;
+}
+.item2{
+  
+  display: flex;
+}
+
+.zhengwen{
+  text-align: center;
+  font-size: 34rpx;
+
+}
+
+
+.row-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 24rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.row-container .header {
+  display: block;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 24rpx;
+}
+.row-container .header .left {
+  float: left;
+  color: #444;
+  font-size: 28rpx;
+  position: relative;
+  padding-left: 50rpx;
+}
+.bilibili-index-sprite image{
+  display: inline-block;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 24rpx;
+  left: 0;
+}
+.bilibili-index-hot image{
+  background-position: -5px -215px;
+  width: 20px;
+  height: 20px;
+}
+.row-container .header .right {
+  float: right;
+  font-size: 14px;
+  color: #999;
+  position: relative;
+  padding-right: 25px;
+}
+.row-container .header .hot {
+  font-size: 13px;
+  color: #ffb30f;
+  padding: 0 0 0 25px;
+}
+.bilibili-index-ranking image{
+  background-position: -5px -85px;
+  width: 20px;
+  height: 20px;
+}
+.row-container .content-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.row-container img {
+  vertical-align: top;
+}
+.row-container .content-list {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  padding: 0 6px 24px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.row-container .content-list .item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.row-container .content-list .item .top {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 63%;
+  box-sizing: border-box;
+}
+.row-container .content-list .info {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.row-container .content-list .item .cover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.row-container .content-list .info .title {
+  width: 100%;
+  max-height: 36px;
+  overflow: hidden;
+  color: #444;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+.row-container .left {
+  float: left;
+  box-sizing: border-box;
+}
+.row-container .content-list .info .cell {
+  position: relative;
+  width: 50%;
+  font-size: 13px;
+  color: #999;
+  padding-left: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.bilibili-index-play image{
+  background-position: -5px -425px;
+  width: 15px;
+  height: 11px;
+  top: 50%;
+  margin-top: -6px;
+}
+.bilibili-index-danmu image{
+  background-position: -5px -446px;
+  width: 15px;
+  height: 11px;
+  top: 50%;
+  margin-top: -6px;
+}
+.bilibili-index-live image{
+  background-position: -5px -155px;
+  width: 20px;
+  height: 20px;
+}
+.bilibili-index-arrow image{
+  background-position: -5px -395px;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  left: auto;
+}
+.row-container .content-list .info .avatar {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  border: 2px solid #fff;
+  top: -26px;
+  left: 7px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+.row-container .content-list .info .avatar image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.row-container .content-list .info .user {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 100%;
+  padding-left: 56px;
+  box-sizing: border-box;
+}
+.row-container .text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.row-container .content-list .info .name {
+  font-size: 13px;
+  color: #444;
+  line-height: 44rpx;
+}
+.row-container .content-list .info .desp {
+  font-size: 13px;
+  color: #999;
+  padding-top: 2px;
+}
+.row-container .content-list .info .online {
+  position: absolute;
+  top: 25px;
+  width: 48px;
+  padding: 0 1px;
+  color: #fff;
+  background-color: #ccc;
+  border-radius: 6px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+.bilibili-index-bangumi image{
+  background-position: -5px -365px;
+  width: 20px;
+  height: 20px;
+}
+.row-container .bangumi-list {
+  width: 33.333333%;
+}
+.row-container .bangumi-list .top {
+  padding-top: 75%;
+}
+.row-container .content-list .info .bangumi-title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 46rpx;
+  color: #444;
+}
+.row-container .content-list .info .bangumi-page {
+  text-align: center;
+  font-size: 13px;
+  color: #EA6CAF;
+}
+
+.xiao{
+  font-size: 13px;
+
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: red;
+}
+
+
+.first_tab .goods_item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.first_tab .goods_item .goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_tab .goods_item .goods_img_wrap image {
+  width: 70%;
+}
+.first_tab .goods_item .goods_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.first_tab .goods_item .goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

@@ -1,0 +1,162 @@
+<view class="user_content">
+<view class="user_main">
+
+  <view class="app_info_item">我的天气</view>
+   <view>请输入你想要查询的城市：</view>
+  <view class="account">
+  <view class="title">城市：</view>
+  <view class="num">
+    <!-- bindinput 输入的时间 -->
+    <input bindinput="Input_city" value="{{city}}" placeholder="例如：桂林" placeholder-style="color:#999;"/>
+  </view>
+</view>
+<view class="hr"></view>
+    
+
+<button class="btn" type="primary" bindtap="btn1">查询天气</button>
+<view text-align="center">系统会根据你的地址直接自动定位</view>
+<!--第二部分-->
+<view wx:if="{{statu==1}}"> 
+<view title="tip">查询结果很快出来...</view>
+<view title="tip">请耐心等待...</view>
+<view title="tip">>>></view>
+</view>
+<view wx:if="{{statu==2}}">
+<view class="app_info_item">结果：</view>
+<view class="app_info_item">城市: {{city1}}</view>
+<view class="app_info_item">日期: {{date}} {{week}}</view>
+<view class="app_info_item">天气: {{weather}}</view>
+<view class="app_info_item">湿度: {{humidity}} %rh  气压：{{pressure}} Pa</view>
+<view class="app_info_item">风速: {{windspeed}} 风向：{{winddirect}} 风级：{{windpower}} </view>
+<view class="app_info_item">更新时间：{{updatetime}} </view>
+<view class="app_info_item">相关指数信息：
+  <view class="row-container" >
+    <view class="header" >
+      <view class="left">
+        <view class="bilibili-index-sprite bilibili-index-hot">
+          <view ><image src="/images/10.png"></image></view>
+       
+        </view>
+        <text>温度</text>
+      </view>
+      <view class="right">
+        <view class="bilibili-index-sprite bilibili-index-arrow">
+          <image src="/images/gengduo.png"></image>
+        </view>
+        <text>查看更多</text>
+      </view>
+    </view>
+    <view>体感气温：{{temp}}°</view>
+    <view>一天最高气温：{{temphigh}}°</view>
+    <view>一天最低气温：{{templow}}°</view>
+  </view>
+
+  <view class="row-container" wx:for="{{index}}">
+    <view class="header" >
+      <view class="left">
+        <view class="bilibili-index-sprite bilibili-index-hot">
+          <view wx:if="{{item.iname=='空调指数'}}"><image src="/images/3.png"></image></view>
+          <view wx:if="{{item.iname=='运动指数'}}"><image src="/images/4.png"></image></view>
+          <view wx:if="{{item.iname=='紫外线指数'}}"><image src="/images/5.png"></image></view>
+          <view wx:if="{{item.iname=='感冒指数'}}"><image src="/images/6.png"></image></view>
+          <view wx:if="{{item.iname=='洗车指数'}}"><image src="/images/7.png"></image></view>
+          <view wx:if="{{item.iname=='空气污染扩散指数'}}"><image src="/images/8.png"></image></view>
+          <view wx:if="{{item.iname=='穿衣指数'}}"><image src="/images/9.png"></image></view>
+        </view>
+        <text>{{item.iname}}</text>
+      </view>
+      <view class="right">
+        <view class="bilibili-index-sprite bilibili-index-arrow">
+          <image src="/images/gengduo.png"></image>
+        </view>
+        <text>查看更多</text>
+      </view>
+    </view>
+    <view>指数值：{{item.ivalue}}</view>
+    <view>指数详细：{{item.detail}}</view>
+  </view>
+</view>
+  <view class="app_info_item">空气质量信息：
+    <view class="xiao">二氧化硫1小时平均：{{so2}}
+</view>
+    <view class="xiao">二氧化硫24小时平均：{{so224}}
+</view>
+    <view class="xiao">二氧化氮1小时平均：{{no2}}
+</view>
+    <view class="xiao">二氧化氮24小时平均：{{no224}}
+</view>
+    <view class="xiao">一氧化碳1小时平均： {{co}} mg/m3
+</view>
+    <view class="xiao">一氧化碳24小时平均： {{co24}} mg/m3
+</view>
+    <view class="xiao">臭氧1小时平均： 
+{{o3}} </view>
+    <view class="xiao">臭氧8小时平均： 
+{{o38	}}</view>
+    <view class="xiao">臭氧24小时平均： 
+{{o324}}</view>
+    <view class="xiao">PM10 1小时平均：{{pm10}}</view>
+    <view class="xiao">PM10 24小时平均
+： {{pm1024}}</view>
+    <view class="xiao">PM2.5 1小时平均：{{pm2_5	}}</view>
+    <view class="xiao">PM2.5 24小时平均： {{pm2_524	}}</view>
+    <view class="xiao">二氧化硫指数： {{iso2}}</view>
+    <view class="xiao">二氧化氮指数：{{ino2}}</view>
+    <view class="xiao">一氧化碳指数：{{ico}}</view>
+    <view class="xiao">臭氧指数：{{io3	}}</view>
+    <view class="xiao">臭氧8小时指数：{{io38}}</view>
+    <view class="xiao">PM10指数：{{ipm10}}</view>
+    <view class="xiao">PM2.5指数：{{ipm2_5	}}</view>
+    <view class="xiao">AQI指数：{{aqi}}</view>
+    <view class="xiao">首要污染物：{{primarypollutant	}}</view>
+    <view class="xiao">空气质量指数：{{quality}}</view>
+    <view class="xiao">发布时间：{{timepoint}}</view>
+  </view>
+  <view class="app_info_item">
+    AQI指数:
+    <view>首要污染物：{{primarypollutant}}</view>
+    <view>空气等级：{{level}}</view>
+    <view>对健康的影响：{{affect}}</view>
+    <view>建议采取的措施：{{measure}}</view>
+    <view></view>
+  </view>
+
+    <view class="app_info_item">未来24小时天气预报：</view>
+    <view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{hourly}}"
+        wx:key="">
+            <!-- 左侧 计划容器 -->
+            <view class="goods_img_wrap">
+              <view>{{item.time}}</view>
+            </view>
+            <!-- 右侧 完成量容器 -->
+            <view class="goods_info_wrap">
+              
+              <view class="goods_name">天气：{{item.weather}} </view>
+              <view class="goods_name">温度：{{item.temp}} </view>
+            </view>
+          </view>
+    </view> 
+    <view class="app_info_item">未来7天天气预报：</view>
+<view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{daily}}"
+        wx:key="">
+            <!-- 左侧 计划容器 -->
+            <view class="goods_img_wrap">
+              <view>{{item.date}} {{item.week}}</view>
+            </view>
+            <!-- 右侧 完成量容器 -->
+            <view class="goods_info_wrap">
+              
+              <view class="goods_name">日升时间：{{item.sunrise}}  日落时间：{{item.sunset}} </view>
+              <view>天气：{{item.night.weather}} 温度：{{item.night.templow}}° 风向：{{item.night.winddirect}} 风力：{{item.night.windpower}}</view> 
+            </view>
+          </view>
+    </view> 
+  </view>
+</view>
+  </view>
+
+  

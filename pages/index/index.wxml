@@ -1,0 +1,70 @@
+<toubu></toubu>
+
+<view class="page__hd">
+    <view class="weui-panel border-shadow">
+      <navigator url="/pages/core/set/today" hover-class="none">
+        <view class="weui-panel__hd">
+          {{theDay}}
+        </view>
+      </navigator>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg" >
+          <block>
+            <view class="weui-media-box__hd_in-appmsg">
+              {{day}}
+            </view>
+            <view class="weui-media-box_text">
+              天你已使用，本小程序欢迎您的使用!!!😘😘😘
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="user_content">
+<view class="user_main">
+
+  <navigator url="/pages/we/we" >
+  <view class="app_info_item">查询大厅</view></navigator>
+
+
+  <view class="view_3">
+    <navigator url="/pages/kuaidi/kuaidi"  class="list-item">
+      <image class="item-image" src="/images/1.png"></image>
+      <text class="item-text">我的快递</text>
+      <image class="image-jiantou" src="/images/duo.png"></image>
+    </navigator>      
+
+
+    <view class="line"></view>
+
+
+    
+
+    <navigator url="/pages/city/city" class="list-item">
+      <image class="item-image" src="/images/2.png"></image>
+      <text class="item-text">我所在城市天气</text>
+      <image class="image-jiantou" src="/images/duo.png"></image>
+    </navigator>
+
+    <view class="line"></view>
+
+
+
+
+    <navigator url="/pages/shu/shu" class="list-item">
+      <image class="item-image" src="/images/shu.png"></image>
+      <text class="item-text">ISBN书号查询</text>
+      <image class="image-jiantou" src="/images/duo.png"></image>
+    </navigator>
+
+    <view class="line"></view>
+
+
+  </view>
+
+  
+
+</view>
+</view>
