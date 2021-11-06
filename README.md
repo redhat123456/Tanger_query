@@ -10,31 +10,12 @@
 
 ## 预览
 
-<div>
-<div style="float: left;width: 100% " text-align="center"> <div style="float: left;
-                width: 45%;
-                box-sizing: border-box;
-                padding: 10px;
-                "><img  src="https://github.com/redhat123456/pohots/blob/master/1.jpg?raw=true"></img></div>  
-                <div style="float: left;
-                width: 45%;
-                box-sizing: border-box;
-                padding: 10px;
-                "><img  src="https://github.com/redhat123456/pohots/blob/master/2.jpg?raw=true"></img> </div>
-                </div>
-                
-          
-<div style="float: left;width: 100%"> <div style="float: left;
-                width: 45%;
-                box-sizing: border-box;
-                padding: 10px;
-                "><img  src="https://github.com/redhat123456/pohots/blob/master/3.jpg?raw=true"></img></div>  
-                <div style="float: left;
-                width: 45%;
-                box-sizing: border-box;
-                padding: 10px;
-                "><img  src="https://github.com/redhat123456/pohots/blob/master/4.jpg?raw=true"></img> </div>
-                </div>
+<div style="float: left;width: 100% " align="center"> 
+<img src="https://github.com/redhat123456/pohots/blob/master/2.png?raw=true"></img>
+     </div>           
+          上面是首页和快递查询页面
+<div style="float: left;width: 100%" align="center">
+<img src="https://github.com/redhat123456/pohots/blob/master/1.png?raw=true"></img>
 </div>
 
 以上就是图片预览 🎈✨
