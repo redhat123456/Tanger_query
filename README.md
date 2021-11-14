@@ -1,5 +1,9 @@
 # 微信小程序——查询小程序
 
+![Site CI](https://github.com/redhat123456/Tanger_query/workflows/Site%20CI/badge.svg) ![pr badgen](https://badgen.net/github/open-prs/redhat123456/Tanger_query/) ![last commit](https://badgen.net/github/last-commit/redhat123456/Tanger_query/main) ![contributors](https://badgen.net/github/contributors/redhat123456/Tanger_query) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 [https://github.com/redhat123456/Tanger_query](https://github.com/redhat123456/Tanger_query)
 
 微信小程序查询小程序，长期维护版本，欢迎大家踊跃提交奉献代码；
